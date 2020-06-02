@@ -6,6 +6,8 @@
 
 /* mobile grid layout */
 
+@media (min-width: 320px) {
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -372,6 +374,8 @@ fieldset {
     border: none;
 }
 
+}
+
 @media (min-width: 768px) {
     
     .grid-container {
@@ -483,6 +487,11 @@ fieldset {
         grid-area: message;
         justify-content: space-between;
         padding: 15px;
+    }
+
+    .message textarea {
+        resize: none;
+        height: 10em;
     }
 
     .settings {
